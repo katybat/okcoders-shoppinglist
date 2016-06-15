@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+	<html>
+			<head>
+				<meta charset="utf-8">
+				<title>Shopping List App</title>
+				<script src = "https://code.jquery.com/jquery-3.0.0.min.js"></script>
+			</head>
+			
+			<body>
+				<h1><center>Shopping List</center></h1>
+				
+				<div id="list"></div>
+			
+			</body>
+			
+			<script>
+				$.get('/list', function(items) {			//items is an Array
+// 					console.log('list = ', items);
+					$('#list').text(items.join(' | ')); //$('#list').text('<b>'+ items+ '</b')
+				});
+				
+			</script>
+		
+		
+	</html>
+	
