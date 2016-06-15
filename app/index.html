@@ -16,8 +16,16 @@
 			<script>
 				$.get('/list', function(items) {			//items is an Array
 // 					console.log('list = ', items);
-					$('#list').text(items.join(' | ')); //$('#list').text('<b>'+ items+ '</b')
+					$('#list').text(items.join(' | ')); 	//set the text of #list to the concatenated items Array
+					//$('#list').text('<b>'+ items+ '</b')--makes bold but not how we want to do this
+				
 				});
+								//Same way but different:	
+				// 				var el = $('#list');
+				// 				var text = items.join(' | ');
+				// 				el.text(text);
+				
+				
 				
 			</script>
 		
