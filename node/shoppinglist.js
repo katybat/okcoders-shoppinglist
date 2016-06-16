@@ -14,3 +14,7 @@ app.use('/',express.static('../app'));	//Serve our static HTML files //periods g
 app.get('/list', function(req, res) {
 		res.json(['Cat Food', 'Toothpaste', 'Bananas']);
 });
+
+app.get('/heyo', function(req,res) {	
+	res.json('Hotel, Motel, Holiday Inn.');
+});

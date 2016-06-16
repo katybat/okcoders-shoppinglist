@@ -10,6 +10,8 @@
 				<h1><center>Shopping List</center></h1>
 				
 				<div id="list"></div>
+				
+				<div id="holla"></div>
 			
 			</body>
 			
@@ -26,6 +28,9 @@
 				// 				el.text(text);
 				
 				
+				$.get('/heyo', function(stuff){
+					$('#holla').text(stuff);
+				});
 				
 			</script>
 		
